@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Movie Website</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* NAVBAR */
+
+.custom-navbar{
+background:#6f5d5d;
+}
+
+.logo{
+font-weight:bold;
+color:black;
+}
+
+.logo span{
+color:#ff0088;
+}
+
+
+/* BANNER */
+
+.banner{
+
+height:400px;
+
+background-image:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+color:white;
+
+text-shadow:2px 2px 10px black;
+
+font-size:32px;
+font-weight:bold;
+
+}
+
+
+/* CARD */
+
+.card{
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+
+/* FOOTER */
+
+footer{
+
+background:#222;
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+footer img{
+
+width:40px;
+
+margin:10px;
+
+transition:0.3s;
+
+}
+
+footer img:hover{
+
+transform:scale(1.2);
+
+}
+
+</style>
+
+</head>
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+<div class="container">
+
+<a class="navbar-brand logo" href="#">
+SPU <span>SIT</span>
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarMenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+ภาพยนตร์
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item">Gundam Seed Freedom</a></li>
+<li><a class="dropdown-item">Mission Impossible</a></li>
+<li><a class="dropdown-item">Fast X</a></li>
+
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+data-bs-toggle="modal"
+data-bs-target="#contactModal">
+ติดต่อเรา
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- BANNER -->
+
+<section class="banner">
+
+<h1>สัมผัสโลกของภาพยนตร์สุดมันส์</h1>
+
+</section>
+
+
+
+<!-- MOVIE SECTION -->
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">รายการภาพยนตร์</h2>
+
+<div class="row">
+
+<!-- MOVIE 1 -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Avengers: Endgame</h5>
+
+<button class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#movie1">
+
+ดูรายละเอียด
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- MOVIE 2 -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>deadpool and wolverine</h5>
+
+<button class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#movie2">
+
+ดูรายละเอียด
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MOVIE 3 -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>the super mario bros movie</h5>
+
+<button class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#movie3">
+
+ดูรายละเอียด
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MODAL MOVIE 1 -->
+
+<div class="modal fade" id="movie1">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">Gundam Seed Freedom Special Edition</h5>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<p><b>ประเภท:</b> แอคชั่น / ไซไฟ</p>
+
+<p><b>ผู้กำกับ:</b> Mitsuo Fukuda</p>
+
+<p><b>นักแสดง:</b> Soichiro Hoshi, Rie Tanaka</p>
+
+<p>
+เรื่องราวการต่อสู้ของเหล่านักบิน Mobile Suit
+ที่ต้องปกป้องโลกจากสงครามครั้งใหม่
+</p>
+
+</div>
+
+<div class="modal-footer">
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+ปิด
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MODAL MOVIE 2 -->
+
+<div class="modal fade" id="movie2">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">Mission Impossible Dead Reckoning</h5>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<p><b>ประเภท:</b> แอคชั่น / สายลับ</p>
+
+<p><b>ผู้กำกับ:</b> Christopher McQuarrie</p>
+
+<p><b>นักแสดง:</b> Tom Cruise</p>
+
+<p>
+Ethan Hunt และทีม IMF ต้องหยุดยั้ง
+AI อันตรายที่สามารถคุกคามโลก
+</p>
+
+</div>
+
+<div class="modal-footer">
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+ปิด
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MODAL MOVIE 3 -->
+
+<div class="modal fade" id="movie3">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">Fast X</h5>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<p><b>ประเภท:</b> แอคชั่น / แข่งรถ</p>
+
+<p><b>ผู้กำกับ:</b> Louis Leterrier</p>
+
+<p><b>นักแสดง:</b> Vin Diesel, Jason Momoa</p>
+
+<p>
+Dom Toretto และครอบครัวต้องเผชิญ
+ศัตรูใหม่ที่ต้องการล้างแค้น
+</p>
+
+</div>
+
+<div class="modal-footer">
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+ปิด
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- ABOUT -->
+
+<div class="container mt-5" id="about">
+
+<h2>เกี่ยวกับเรา</h2>
+
+<p>
+
+เว็บไซต์นี้สร้างขึ้นเพื่อแนะนำภาพยนตร์ที่น่าสนใจ
+และเป็นตัวอย่างการสร้างเว็บไซต์ด้วย Bootstrap
+
+</p>
+
+</div>
+
+
+
+<!-- CONTACT MODAL -->
+
+<div class="modal fade" id="contactModal">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">ติดต่อเรา</h5>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<div class="mb-3">
+
+<label>ชื่อ-นามสกุล</label>
+
+<input type="text" class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label>อีเมล</label>
+
+<input type="email" class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label>ข้อความ</label>
+
+<textarea class="form-control" rows="4"></textarea>
+
+</div>
+
+<button class="btn btn-success">
+ส่งข้อมูล
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2025 Movie By 12345678</p>
+
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111498.png"></a>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

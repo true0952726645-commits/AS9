@@ -1,0 +1,109 @@
+body{
+    font-family:sans-serif;
+    margin:0;
+    }
+    
+    
+    /* NAVBAR */
+    
+    .custom-navbar{
+    background:#7d6b6b;
+    }
+    
+    .logo{
+    font-weight:bold;
+    color:black;
+    }
+    
+    .logo span{
+    color:#d6008f;
+    }
+    
+    .navbar-toggler{
+    border:1px solid white;
+    }
+    
+    .navbar-toggler-icon{
+    filter:invert(1);
+    }
+   
+    .custom-navbar{
+        background:#7d6b6b;
+        }
+    
+    
+    /* BANNER */
+    
+    .banner{
+    
+    height:420px;
+    
+    background-image:url("https://images.unsplash.com/photo-1635805737707-575885ab0820");
+    
+    background-size:cover;
+    background-position:center;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    color:white;
+    
+    text-shadow:2px 2px 10px black;
+    
+    font-size:30px;
+    font-weight:bold;
+    
+    text-align:center;
+    
+    }
+    
+    
+    /* CARD */
+    
+    .movie-card{
+    margin-bottom:20px;
+    transition:0.3s;
+    }
+    
+    .movie-card:hover{
+    transform:scale(1.05);
+    }
+    
+    
+    /* CONTACT */
+    
+    .contact-box{
+    max-width:600px;
+    margin:auto;
+    }
+    
+    
+    /* FOOTER */
+    
+    footer{
+    
+    background:#222;
+    color:white;
+    
+    text-align:center;
+    
+    padding:30px;
+    
+    }
+    
+    footer img{
+    
+    width:40px;
+    
+    margin:10px;
+    
+    transition:0.3s;
+    
+    }
+    
+    footer img:hover{
+    
+    transform:scale(1.2);
+    
+    }
